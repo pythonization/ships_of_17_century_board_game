@@ -1,0 +1,36 @@
+{% extends "ship_game/layout_w_menu.html" %}
+
+{% block title %}Room {{ room_d.name }}{% endblock %}
+
+{% block additional_assets %}
+
+{{ room_d | json_script:"stored_room_data" }}
+
+{% load vite %}
+
+<!--Vite dev client for hmr (will not be displayed on production)-->
+{% vite %}
+<!-- +
+but because of Uncaught Error: @vitejs/plugin-react can't detect preamble. Something is wrong. See https://github.com/vitejs/vite-plugin-react/pull/11#discussion_r430879201
+but using another answer see: https://github.com/vitejs/vite/issues/1984
+should add code below
+maybe this is another problem of protibimbok/django-vite-plugin
+Seems this is need only when debugging React
+-->
+<script type="module">
+    import RefreshRuntime from "http://localhost:5173/@react-refresh"
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+{% vite 'ship_game/pages/room.jsx' %}
+{% endblock %}
+
+{% block under_menu %}
+<div id="room_component_root"></div>
+
+{% include "ship_game/modal.html" %}
+
+{% endblock %}

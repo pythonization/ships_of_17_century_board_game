@@ -1,0 +1,348 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Render tests > Cell (all 3 types) 1`] = `
+<td
+  onMouseDown={[MockFunction spy]}
+  onMouseEnter={[MockFunction spy]}
+  style={
+    {
+      "border": false,
+    }
+  }
+/>
+`;
+
+exports[`Render tests > Cell (all 3 types) 2`] = `
+<td
+  onMouseDown={[MockFunction spy]}
+  onMouseEnter={[MockFunction spy]}
+  style={
+    {
+      "border": "1px solid black",
+    }
+  }
+/>
+`;
+
+exports[`Render tests > Cell (all 3 types) 3`] = `
+<td
+  onMouseDown={[MockFunction spy]}
+  onMouseEnter={[MockFunction spy]}
+  style={
+    {
+      "border": "1px solid black",
+    }
+  }
+>
+  <i
+    className="fa-solid fa-anchor"
+  />
+</td>
+`;
+
+exports[`Render tests > Map (Editable) 1`] = `
+<table
+  className="ship_map"
+  onMouseDown={[Function]}
+  style={
+    {
+      "backgroundImage": "url(\\"/not_existing_image.png\\")",
+      "borderCollapse": "separate",
+      "fontSize": "12.75vw",
+      "width": "100vw",
+    }
+  }
+>
+  <tbody>
+    <tr
+      style={
+        {
+          "height": "calc(25vw - 2px)",
+        }
+      }
+    >
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+    </tr>
+    <tr
+      style={
+        {
+          "height": "calc(25vw - 2px)",
+        }
+      }
+    >
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+    </tr>
+    <tr
+      style={
+        {
+          "height": "calc(25vw - 2px)",
+        }
+      }
+    >
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      >
+        <i
+          className="fa-solid fa-anchor"
+        />
+      </td>
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": false,
+          }
+        }
+      />
+    </tr>
+    <tr
+      style={
+        {
+          "height": "calc(25vw - 2px)",
+        }
+      }
+    >
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": false,
+          }
+        }
+      />
+      <td
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          {
+            "border": false,
+          }
+        }
+      />
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Render tests > Map (Readonly) 1`] = `
+<table
+  className="ship_map"
+  onMouseDown={[Function]}
+  style={
+    {
+      "backgroundImage": "url(\\"/not_existing_image.png\\")",
+      "borderCollapse": undefined,
+      "fontSize": "17vw",
+      "width": "100vw",
+    }
+  }
+>
+  <tbody>
+    <tr
+      style={
+        {
+          "height": "33.333333333333336vw",
+        }
+      }
+    >
+      <td
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+    </tr>
+    <tr
+      style={
+        {
+          "height": "33.333333333333336vw",
+        }
+      }
+    >
+      <td
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      >
+        <i
+          className="fa-solid fa-anchor"
+        />
+      </td>
+      <td
+        style={
+          {
+            "border": false,
+          }
+        }
+      />
+    </tr>
+    <tr
+      style={
+        {
+          "height": "33.333333333333336vw",
+        }
+      }
+    >
+      <td
+        style={
+          {
+            "border": "1px solid black",
+          }
+        }
+      />
+      <td
+        style={
+          {
+            "border": false,
+          }
+        }
+      />
+      <td
+        style={
+          {
+            "border": false,
+          }
+        }
+      />
+    </tr>
+  </tbody>
+</table>
+`;

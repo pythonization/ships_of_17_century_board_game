@@ -1,0 +1,477 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`User make small map and draw land and ports on it 1`] = `
+<DocumentFragment>
+  <div>
+    <table
+      class="ship_map"
+      style="width: 100vw; font-size: 12.75vw; background-image: url(undefined/ship_game/static/ship_game/components/map_data/osm_g_finland.png); border-collapse: separate;"
+    >
+      <tbody>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`User make small map and draw land and ports on it 2`] = `
+<DocumentFragment>
+  <div>
+    <table
+      class="ship_map"
+      style="width: 100vw; font-size: 12.75vw; background-image: url(undefined/ship_game/static/ship_game/components/map_data/osm_g_finland.png); border-collapse: separate;"
+    >
+      <tbody>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`User make small map and draw land and ports on it 3`] = `
+<DocumentFragment>
+  <div>
+    <table
+      class="ship_map"
+      style="width: 100vw; font-size: 12.75vw; background-image: url(undefined/ship_game/static/ship_game/components/map_data/osm_g_finland.png); border-collapse: separate;"
+    >
+      <tbody>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`User make small map and draw land and ports on it 4`] = `
+<DocumentFragment>
+  <div>
+    <table
+      class="ship_map"
+      style="width: 100vw; font-size: 12.75vw; background-image: url(undefined/ship_game/static/ship_game/components/map_data/osm_g_finland.png); border-collapse: separate;"
+    >
+      <tbody>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+          <td
+            style="border: 1px solid black;"
+          >
+            <i
+              class="fa-solid fa-anchor"
+            />
+          </td>
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          >
+            <i
+              class="fa-solid fa-anchor"
+            />
+          </td>
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`User make small map and draw land and ports on it 5`] = `
+<DocumentFragment>
+  <div>
+    <table
+      class="ship_map"
+      style="width: 100vw; font-size: 12.75vw; background-image: url(undefined/ship_game/static/ship_game/components/map_data/osm_g_finland.png); border-collapse: separate;"
+    >
+      <tbody>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style="border: 1px solid black;"
+          />
+          <td
+            style=""
+          />
+          <td
+            style="border: 1px solid black;"
+          >
+            <i
+              class="fa-solid fa-anchor"
+            />
+          </td>
+          <td
+            style=""
+          />
+        </tr>
+        <tr
+          style="height: calc(25vw - 2px);"
+        >
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+          <td
+            style=""
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`User make small map and draw land and ports on it 6`] = `
+<DocumentFragment>
+  <div
+    id="place4map_editor_bt"
+  >
+    <button
+      class="btn btn-outline-primary"
+      type="button"
+    >
+      <i
+        class="fa-solid fa-code"
+      />
+        Copy code of a map
+    </button>
+     
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+    >
+      <i
+        class="fa-solid fa-gears"
+      />
+        Settings
+    </button>
+  </div>
+  <div
+    aria-labelledby="ship_modal_label"
+    aria-modal="true"
+    class="modal fade show"
+    id="ship_modal"
+    role="dialog"
+    style="padding-right: 1024px; display: block;"
+    tabindex="-1"
+  >
+    <div
+      class="modal-dialog modal-lg"
+    >
+      <div
+        class="modal-content"
+        id="ship_modal_content"
+      >
+        <div
+          class="modal-header"
+        >
+          <h1
+            class="modal-title"
+            id="ship_modal_label"
+          >
+            Map Code
+          </h1>
+          <button
+            aria-label="Close"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            type="button"
+          />
+        </div>
+        <div
+          class="modal-body"
+        >
+          <textarea
+            class="w-100"
+            readonly=""
+            rows="10"
+          >
+            [["W","W","W","W"],["W"," ","W"," "],["W"," ","P"," "],[" "," "," "," "]]
+          </textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

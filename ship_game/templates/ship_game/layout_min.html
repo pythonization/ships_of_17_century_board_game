@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{% block title %}{% endblock %} - Ships XVII (board game)</title>
+
+    <script>
+        /*!
+         * Modified version of
+         * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+         * taken from: https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript
+         */
+
+        (() => {
+            'use strict'
+
+            const getStoredTheme = () => localStorage.getItem('theme')
+            const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+            const getPreferredTheme = () => {
+                const storedTheme = getStoredTheme()
+                if (storedTheme) {
+                    return storedTheme
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+            }
+
+            // this function set theme on {html} element
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark')
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme)
+                }
+            }
+
+            setTheme(getPreferredTheme())
+            
+            // this function change look of theme toggle button
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitcher = document.querySelector('#bd-theme')
+
+                if (!themeSwitcher) {
+                    return
+                }
+
+                const themeSwitcherText = document.querySelector('#bd-theme-text')
+                const activeThemeIcon = document.querySelector('.theme-icon-active')
+                const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                const classOfActiveBtn = btnToActive.querySelector('i').getAttribute('class').split(' ')[0]
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active')
+                    element.setAttribute('aria-pressed', 'false')
+                })
+
+                btnToActive.classList.add('active')
+                btnToActive.setAttribute('aria-pressed', 'true')
+                
+                activeThemeIcon.classList.remove(
+                    'fa-sun', 'fa-moon', 'fa-circle-half-stroke',
+                );
+                activeThemeIcon.classList.add(classOfActiveBtn);
+                const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+                themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+                if (focus) {
+                    themeSwitcher.focus()
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme()
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme())
+                }
+            })
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme())
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const theme = toggle.getAttribute('data-bs-theme-value')
+                            setStoredTheme(theme)
+                            setTheme(theme)
+                            showActiveTheme(theme, true)
+                        })
+                    })
+            })
+        })()
+    </script>
+
+    {% load static %}
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'ship_game/favicon.png' %}" />
+
+    <!-- append like this
+    because if I use
+    import "@fortawesome/fontawesome-free/css/all.css";
+    in ship_game/static/ship_game/pages/all_pages.js
+    css will work, but load of *.woff2 and *.ttf will fail
+    seems problem is because of protibimbok/django-vite-plugin
+    maybe should use MrBin99/django-vite
+    -->
+    <link href="{% static 'ship_game/lib/fontawesome-free/css/all.min.css' %}" rel="stylesheet"/>
+
+    {% load vite %}
+
+    {% vite 'ship_game/pages/all_pages.js' %}
+
+    {% block additional_assets %}
+    {% endblock %}
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-primary-subtle">
+        <div class="container-fluid">
+            {% block menu_brand %}
+            {% endblock %}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ship_main_menu"
+                aria-controls="ship_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="ship_main_menu">
+                <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+                    {% block menu_items %}
+                    {% endblock %}
+
+                    <li class="nav-item dropdown ms-md-auto">
+                        <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                            id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                            data-bs-display="static" aria-label="Toggle theme (auto)">
+                    
+                            <i class="fa-solid fa-sun theme-icon-active"></i>
+                            <span class="d-md-none ms-2" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text" id="bd-theme-list">
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="light" aria-pressed="false">
+                    
+                                    <!-- here important to keep unique class first for .js -->
+                                    <i class="fa-sun fa-solid me-1"></i>
+                                    Light
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                    
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="dark" aria-pressed="false">
+                    
+                                    <!-- here important to keep unique class first for .js -->
+                                    <i class="fa-moon fa-solid me-1"></i>
+                                    Dark
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                    
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center active"
+                                    data-bs-theme-value="auto" aria-pressed="true">
+                    
+                                    <!-- here important to keep unique class first for .js -->
+                                    <i class="fa-circle-half-stroke fa-solid me-1"></i>
+                                    Auto
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                    
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+    
+        </div>
+    </nav>
+    
+    {% block under_menu %}
+    {% endblock %}
+</body>
+
+</html>

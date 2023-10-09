@@ -1,0 +1,40 @@
+{% extends "ship_game/layout_min.html" %}
+
+{% block title %}Map Editor{% endblock %}
+
+{% block additional_assets %}
+{% load vite %}
+
+<!--Vite dev client for hmr (will not be displayed on production)-->
+{% vite %}
+<!-- +
+but because of Uncaught Error: @vitejs/plugin-react can't detect preamble. Something is wrong. See https://github.com/vitejs/vite-plugin-react/pull/11#discussion_r430879201
+but using another answer see: https://github.com/vitejs/vite/issues/1984
+should add code below
+maybe this is another problem of protibimbok/django-vite-plugin
+Seems this is need only when debugging React
+-->
+<script type="module">
+    import RefreshRuntime from "http://localhost:5173/@react-refresh"
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+{% vite 'ship_game/pages/map_editor.jsx' %}
+{% endblock %}
+
+{% block menu_items %}
+<li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+</li>
+<form id="place4map_editor_bt"></form>
+{% endblock %}
+
+{% block under_menu %}
+<div id="map_root"></div>
+
+{% include "ship_game/modal.html" %}
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Update DB",
+            "type": "process",
+            "command": "bash",
+            "args": [
+                "update_db.sh"
+            ],
+            "problemMatcher": [],
+            "icon": {
+                "id": "database"
+            }
+        },
+        {
+            "label": "Run Vite webserver",
+            "type": "shell",
+            "command": "source .venv/bin/activate; npm run dev",
+            "icon": {
+                "id": "broadcast"
+            },
+            "problemMatcher": [],
+        },
+        {
+            "label": "Run Vitest",
+            "type": "shell",
+            "command": "source .venv/bin/activate; npm run test",
+            "icon": {
+                "id": "beaker"
+            },
+            "problemMatcher": [],
+        },
+        {
+            "label": "Run code coverage (report)",
+            "type": "shell",
+            "command": "source .venv/bin/activate; npm run coverage",
+            "icon": {
+                "id": "beaker"
+            },
+            "problemMatcher": [],
+        },
+    ]
+}

@@ -1,0 +1,46 @@
+{% extends "ship_game/layout_w_menu.html" %}
+
+{% block title %}Home page{% endblock %}
+
+{% load static %}
+
+{% block under_menu %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <h1>Ships XVII</h1>
+            This is a board game where you can try itself in trading or pirating (or both), while sailing on the ships
+            of 17 century.
+        </div>
+        <div class="col-md-6 col-12">
+            <img class="w-100" src="{% static 'ship_game/logo_full.jpg' %}" alt="Pirate ship" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h2>Rooms</h2>
+            {% if room_list %}
+
+                <div class="list-group d-inline-block">
+                    {% for room in room_list %}
+                    <a href="{% url 'room' room.id %}" class="list-group-item list-group-item-action list-group-item-primary">
+                        <h3 class="d-inline me-3">
+                            {{ room.name }}
+                        </h3>
+                        <button type="button" class="btn btn-primary float-end">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Enter
+                        </button>
+                    </a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p>No rooms are available.</p>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+{% endblock %}

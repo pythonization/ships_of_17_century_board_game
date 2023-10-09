@@ -1,0 +1,295 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Render tests: editor (dialogs closed/opened) 1`] = `
+[
+  <div
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+  >
+    Map was here, but now it is mocked
+  </div>,
+  <button
+    className="btn btn-outline-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fa-solid fa-code"
+    />
+      Copy code of a map
+  </button>,
+  " ",
+  <button
+    className="btn btn-outline-secondary"
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fa-solid fa-gears"
+    />
+      Settings
+  </button>,
+]
+`;
+
+exports[`Render tests: editor (dialogs closed/opened) 2`] = `
+[
+  <div
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+  >
+    Map was here, but now it is mocked
+  </div>,
+  <button
+    className="btn btn-outline-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fa-solid fa-code"
+    />
+      Copy code of a map
+  </button>,
+  " ",
+  <button
+    className="btn btn-outline-secondary"
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fa-solid fa-gears"
+    />
+      Settings
+  </button>,
+  <div
+    className="modal-header"
+  >
+    <h1
+      className="modal-title"
+      id="ship_modal_label"
+    >
+      Settings
+    </h1>
+    <button
+      aria-label="Close"
+      className="btn-close"
+      data-bs-dismiss="modal"
+      type="button"
+    />
+  </div>,
+  <div
+    className="modal-body"
+  >
+    <div
+      className="row mt-2"
+    >
+      <div
+        className="col"
+      >
+        Map
+      </div>
+      <div
+        className="col"
+      >
+        <select
+          aria-label="Map"
+          className="form-select"
+          onChange={[Function]}
+          value="g_finland_48x27"
+        >
+          <option
+            value="g_finland_16x9"
+          >
+            Gulf of Finland [16:9 6P]
+          </option>
+          <option
+            value="g_finland_48x27"
+          >
+            Gulf of Finland [48:27 8P]
+          </option>
+          <option
+            value="g_draw"
+          >
+            Gulf (drawing) [48:27 8P]
+          </option>
+          <option
+            value="i_draw"
+          >
+            Islands (drawing) [32:18 8P]
+          </option>
+          <option
+            value="i_draw_square"
+          >
+            Islands (drawing, square) [25:25 8P]
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="row mt-2"
+    >
+      <div
+        className="col"
+      >
+        <label
+          className="form-label"
+          htmlFor="num_rows"
+        >
+          Rows
+        </label>
+      </div>
+      <div
+        className="col"
+      >
+        <input
+          className="form-control"
+          id="num_rows"
+          min="1"
+          onChange={[Function]}
+          type="number"
+          value={3}
+        />
+      </div>
+    </div>
+    <div
+      className="row mt-2"
+    >
+      <div
+        className="col"
+      >
+        <label
+          className="form-label"
+          htmlFor="num_cols"
+        >
+          Columns
+        </label>
+      </div>
+      <div
+        className="col"
+      >
+        <input
+          className="form-control"
+          id="num_cols"
+          min="1"
+          onChange={[Function]}
+          type="number"
+          value={3}
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col offset-6"
+      >
+        <div
+          className="form-check form-switch mt-2"
+        >
+          <input
+            checked={false}
+            className="form-check-input"
+            id="keep_ratio"
+            onChange={[Function]}
+            role="switch"
+            type="checkbox"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="keep_ratio"
+          >
+            Keep ratio
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="alert alert-info mt-3"
+      role="alert"
+    >
+      <p>
+        <strong>
+          Instructions:
+        </strong>
+      </p>
+      <p>
+        <kbd>
+          Click
+        </kbd>
+         or 
+        <kbd>
+          Click + Drag
+        </kbd>
+         to toggle water.
+      </p>
+      <p>
+        <kbd>
+          Ctrl + Click
+        </kbd>
+         to toggle port.
+      </p>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Render tests: editor (dialogs closed/opened) 3`] = `
+[
+  <div
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+  >
+    Map was here, but now it is mocked
+  </div>,
+  <button
+    className="btn btn-outline-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fa-solid fa-code"
+    />
+      Copy code of a map
+  </button>,
+  " ",
+  <button
+    className="btn btn-outline-secondary"
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fa-solid fa-gears"
+    />
+      Settings
+  </button>,
+  <div
+    className="modal-header"
+  >
+    <h1
+      className="modal-title"
+      id="ship_modal_label"
+    >
+      Map Code
+    </h1>
+    <button
+      aria-label="Close"
+      className="btn-close"
+      data-bs-dismiss="modal"
+      type="button"
+    />
+  </div>,
+  <div
+    className="modal-body"
+  >
+    <textarea
+      className="w-100"
+      readOnly={true}
+      rows="10"
+      value="[[\\"W\\",\\"W\\",\\"W\\"],[\\"W\\",\\"W\\",\\"W\\"],[\\"W\\",\\"W\\",\\"W\\"]]"
+    />
+  </div>,
+]
+`;

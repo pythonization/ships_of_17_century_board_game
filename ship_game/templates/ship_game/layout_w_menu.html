@@ -1,0 +1,27 @@
+{% extends "ship_game/layout_min.html" %}
+
+{% load static %}
+
+{% block menu_brand %}
+<a class="navbar-brand" href="/">
+    <img src="{% static 'ship_game/favicon.png' %}" alt="Logo" width="24" height="24"
+        class="d-inline-block align-text-top" />
+    Ships XVII
+</a>
+{% endblock %}
+
+{% block menu_items %}
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'rules' %}">Rules</a>
+</li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        System
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'admin:index' %}">Admin</a></li>
+        <li><a class="dropdown-item" href="{% url 'map_editor' %}">Map editor</a></li>
+    </ul>
+</li>
+{% endblock %}
